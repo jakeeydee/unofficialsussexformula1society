@@ -157,43 +157,51 @@
             line-height: 1.5;
         }
 
-        .card {
-            background-color: var(--accent-color);
-            color: var(--secondary-color);
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+         /* Content */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation-name: fade-in;
-            animation-duration: 3s;
-            animation-fill-mode: forwards;
+            max-width: 960px;
+            margin: 0 auto;
         }
 
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
+        .team {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 20px;
+            width: calc(50% - 40px);
+            text-align: center;
         }
 
-        .card h2 {
-            color: var(--primary-color);
+        .team img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
 
-        .card h3 {
-            font-family: 'Formula One', sans-serif;
+        .team h2 {
+            margin: 20px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             font-size: 24px;
-            margin-top: 0;
-            color: #dc0000;
+            line-height: 1.2;
         }
 
-        .card p {
-            font-size: 16px;
-            line-height: 1.5;
+        @media (max-width: 480px) {
+            .team h2 {
+                font-size: 20px;
+            }
+        }
+
+        .team p {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -204,7 +212,7 @@
     </header>
     <nav>
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">F1</a>
+            <a href="index.html" class="brand-logo" style="margin-left: 20px;">F1</a>
             <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="mobile-menu" class="sidenav">
                 <div>
@@ -227,24 +235,57 @@
     <section>
         <h2 style="text-align: center;">Teams</h2>
     </section>
-    <div class="container">
-        <div class="card">
-            <h3>F1 Teams</h3>
-            <p>There are currently ten teams competing in Formula One:</p>
-            <ul>
-                <li>Mercedes</li>
-                <li>Red Bull Racing</li>
-                <li>McLaren</li>
-                <li>Aston Martin</li>
-                <li>Alpine</li>
-                <li>Ferrari</li>
-                <li>AlphaTauri</li>
-                <li>Alfa Romeo</li>
-                <li>Haas</li>
-                <li>Williams</li>
-            </ul>
+    <div class="team-container">
+        <div class="team">
+            <img src="logos/mercedes-logo.jpg" alt="Mercedes">
+            <h2>Mercedes-AMG Petronas F1 Team</h2>
+            <p>Team Principal: Toto Wolff</p>
         </div>
-    </div>
+        <div class="team">
+            <img src="logos/redbull-logo.jpg" alt="Red Bull Racing">
+            <h2>Oracle Red Bull Racing</h2>
+            <p>Team Principal: Christian Horner</p>
+        </div>
+        <div class="team">
+            <img src="logos/mclaren-logo.jpg" alt="McLaren">
+            <h2>McLaren F1 Team</h2>
+            <p>Team Principal: Andrea Stella</p>
+        </div>
+        <div class="team">
+            <img src="logos/astonmartin-logo.jpg" alt="Aston Martin">
+            <h2 style="font-size: 22px;">Aston Martin Aramco Cognizant F1 Team</h2>
+            <p>Team Principal: Mike Krack</p>
+        </div>
+        <div class="team">
+            <img src="logos/alpine-logo.jpg" alt="Alpine">
+            <h2>BWT Alpine F1 Team</h2>
+            <p>Team Principal: Otmar Szafnauer</p>
+        </div>
+        <div class="team">
+            <img src="logos/ferrari-logo.jpg" alt="Ferrari">
+            <h2>Scuderia Ferrari</h2>
+            <p>Team Principal: Frédéric Vasseur</p>
+        </div>
+        <div class="team">
+            <img src="logos/alphatauri-logo.jpg" alt="AlphaTauri">
+            <h2>Scuderia AlphaTauri</h2>
+            <p>Team Principal: Franz Tost</p>
+        </div>
+        <div class="team">
+            <img src="logos/alfaromeo-logo.jpg" alt="Alfa Romeo">
+            <h2>Alfa Romeo F1 Team Stake</h2>
+            <p>Team Principal: Alessandro Alunni Bravi</p>
+        </div>
+        <div class="team">
+            <img src="logos/haas-logo.jpg" alt="Haas">
+            <h2>MoneyGram Haas F1 Team</h2>
+            <p>Team Principal: Otmar Szafnauer</p>
+        </div>
+        <div class="team">
+            <img src="logos/williams-logo.jpg" alt="Williams">
+            <h2>Williams Racing</h2>
+            <p>Team Principal: James Vowles</p>
+        </div>
 </div>
 <footer>
     <p>© 2023 F1 Racing. All rights reserved.</p>
