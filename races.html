@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Formula+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-4F0R4BjKwS1whfDygsBdQSPjxqkpzg4IvIdZ9zid/fHhrlkpoGwMcFlvIJ1lSYskjphoFNqbqwT6Q2v06U9kQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>F1 Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Styled Basic HTML CSS Page</title>
+    <style>
+        /* F1 color palette */
+        :root {
+            --primary-color: #e10600;
+            --secondary-color: #000;
+            --accent-color: #fff;
+            --green: #37fd12;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px;
+            height: 84px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: var(--accent-color);
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            font-family: 'Formula One', sans-serif;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-wrapper {
+            background-color: #000;
+
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-family: 'Formula One', sans-serif;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Formula One', sans-serif;
+        }
+
+
+        .btn {
+            background-color: #3f51b5;
+            color: #fff;
+        }
+
+
+        /* Section styles */
+        section {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-family: 'Formula One', sans-serif;
+            font-size: 36px;
+            margin-top: 40px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+            border-top: 5px solid var(--primary-color);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            flex: 1;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .card {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation-name: fade-in;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+        }
+
+        .card h3 {
+            font-family: 'Formula One', sans-serif;
+            font-size: 24px;
+            margin-top: 0;
+            color: #dc0000;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Home Of The Unofficial Sussex Formula 1 Society</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="f1.html" class="brand-logo">F1</a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="mobile-menu" class="sidenav">
+                <div>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="drivers.html">Drivers</a></li>
+                    <li><a href="races.html">Races</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </div>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="races.html">Races</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Races</h2>
+    </section>
+    <div class="container">
+        <div class="card">
+            <h3>F1 Races</h3>
+            <p>The Formula One World Championship currently consists of 23 races held in locations around the world. Some of
+                the most famous races include:</p>
+            <ul>
+                <li>Monaco Grand Prix</li>
+                <li>British Grand Prix</li>
+                <li>Italian Grand Prix</li>
+                <li>United States Grand Prix</li>
+                <li>Australian Grand Prix</li>
+                <li>Singapore Grand Prix</li>
+                <li>Japanese Grand Prix</li>
+                <li>Abu Dhabi Grand Prix</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 F1 Racing. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+</script>
+
+</html>
