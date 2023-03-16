@@ -195,6 +195,54 @@
             font-size: 16px;
             line-height: 1.5;
         }
+
+
+        /* Content */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 20px;
+            width: calc(50% - 40px);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .card h2 {
+            margin: 20px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 480px) {
+            .card h2 {
+                font-size: 20px;
+            }
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -204,7 +252,7 @@
     </header>
     <nav>
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">F1</a>
+            <a href="f1.html" class="brand-logo">F1</a>
             <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="mobile-menu" class="sidenav">
                 <div>
@@ -225,35 +273,110 @@
     </nav>
 
     <section>
-        <h2>Drivers</h2>
+        <h2 style="text-align: center;">Drivers</h2>
     </section>
     <div class="container">
-        <div class="card">
-            <h3>F1 Drivers</h3>
-            <p>There are currently twenty drivers competing in Formula One:</p>
-            <ul>
-                <li>Lewis Hamilton</li>
-                <li>George Russel</li>
-                <li>Max Verstappen</li>
-                <li>Sergi Perez</li>
-                <li>Lando Norris</li>
-                <li>Oscar Piastri</li>
-                <li>Fernando Alonso</li>
-                <li>Lance Stroll</li>
-                <li>Esteban Ocon</li>
-                <li>Pierre Gasly</li>
-                <li>Charles Leclerc</li>
-                <li>Carlos Sainz</li>
-                <li>Yuki Tsunoda</li>
-                <li>Nyck De Vries</li>
-                <li>Zhou Guanyu</li>
-                <li>Valtteri Bottas</li>
-                <li>Kevin Magnussen</li>
-                <li>Nico Hulkenberg</li>
-                <li>Alexander Albon</li>
-                <li>Logan Sargeant</li>
-            </ul>
-        </div>
+            <div class="content">
+                <div class="card">
+                    <img src="drivers/driver1.jpg" alt="Lewis Hamilton">
+                    <h2>Lewis Hamilton</h2>
+                    <p>Mercedes Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver2.jpg" alt="George Russel">
+                    <h2>George Russel</h2>
+                    <p>Mercedes Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver3.jpg" alt="Max Verstappen">
+                    <h2>Max Verstappen</h2>
+                    <p>Red Bull Racing Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver4.jpg" alt="Sergio Perez">
+                    <h2>Sergio Perez</h2>
+                    <p>Red Bull Racing Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver5.jpg" alt="Lando Norris">
+                    <h2>Lando Norris</h2>
+                    <p>Mclaren Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver6.jpg" alt="Oscar Piastri">
+                    <h2>Oscar Piastri</h2>
+                    <p>Mclaren Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver7.jpg" alt="Fernando Alonso">
+                    <h2>Fernando Alonso</h2>
+                    <p>Aston Martin Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver8.jpg" alt="Lance Stroll">
+                    <h2>Lance Stroll</h2>
+                    <p>Aston Martin Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver9.jpg" alt="Esteban Ocon">
+                    <h2>Esteban Ocon</h2>
+                    <p>Alpine Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver10.jpg" alt="Pierre Gasly">
+                    <h2>Pierre Gasly</h2>
+                    <p>Alpine Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver11.jpg" alt="Charles Leclerc">
+                    <h2>Charles Leclerc</h2>
+                    <p>Ferrari Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver12.jpg" alt="Carlos Sainz">
+                    <h2>Carlos Sainz</h2>
+                    <p>Ferrari Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver13.jpg" alt="Yuki Tsunoda">
+                    <h2>Yuki Tsunoda</h2>
+                    <p>AlphaTauri Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver14.jpg" alt="Nyck De Vries">
+                    <h2>Nyck De Vries</h2>
+                    <p>AlphaTauri Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver15.jpg" alt="Zhou Guanyu">
+                    <h2>Zhou Guanyu</h2>
+                    <p>Alfa Romeo Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver16.jpg" alt="Valtteri Bottas">
+                    <h2>Valtteri Bottas</h2>
+                    <p>Alfa Romeo Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver17.jpg" alt="Kevin Magnussen">
+                    <h2>Kevin Magnussen</h2>
+                    <p>Haas Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver18.jpg" alt="Niko Hulkenberg">
+                    <h2>Niko Hulkenberg</h2>
+                    <p>Haas Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver19.jpg" alt="Alexander Albon">
+                    <h2>Alexander Albon</h2>
+                    <p>Williams Formula One Team</p>
+                </div>
+                <div class="card">
+                    <img src="drivers/driver20.jpg" alt="Logan Sargeant">
+                    <h2>Logan Sargeant</h2>
+                    <p>Williams Formula One Team</p>
+                </div>
     </div>
     <footer>
         <p>© 2023 F1 Racing. All rights reserved.</p>
